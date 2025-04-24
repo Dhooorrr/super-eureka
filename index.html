@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+  <link rel="icon" type="image/svg+xml" href="https://feeldreams.github.io/main-icon.png"> 
+  <link rel="apple-touch-icon" href="https://feeldreams.github.io/main-icon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+<head>
+<title>Birthday</title>
+</head>
+<body>
+	
+   <div class="overlay">
+     <!-- Teks Loading --><div class="loading-message">Halo rera!<br>Tunggu dulu ya..</div>
+   </div>
+   
+   <!-- Ganti Audio di Sini, edit url di dalam src -->
+   <audio src="yt1z.net - Jamrud - Selamat Ulang Tahun (lyrics) (320 KBps).m" id="linkmp3" class="sembunyi"></audio>
+   
+   <!-- Pesan Pertama -->
+   <section class="first">
+       <!-- Background --><div class="wp"><img id="imgsatu" src="1.jpg"/></div>
+       <!-- Stiker --><img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+       
+       <h1 class="title">Assalamualaikum</h1>
+       <p class="flip">Halo gimana kabarnya sehatkan?</p>
+       <p class="slide-up">Coba geser kebawah deh</p>
+  </section>
+  
+  <!-- Pesan Kedua -->
+  <section>
+      <!-- Background --><div class="wp"><img id="imgdua" src="2.jpg"/></div>
+      <!-- Stiker --><img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
+      
+      <h2 class="title">Ada apa nieee...🤔🤨</h2>
+      <p class="slide-right">Coba geser lagi</p>
+  </section>
+  
+  <!-- Pesan Ketiga dengan Animasi Ngetik -->
+  <section>
+  	<!-- Background --><div class="wp"><img id="imgtiga" src="3.jpg"/></div>
+  
+    
+      <p id="teksnimasi"><audio id="ketikSound" src="typewriter-typing-68696.mp3" preload="auto"></audio>🎉Selamat ulang tahun Aina el Harera! 🌟Hari ini merupakan momen penting, karena hari ini adalah harinya Rera nih . Setiap detik yang berlalu, kamu telah memberi warna dan kebahagiaan dalam hidup banyak orang. Kehadiranmu seperti bunga yang mekar, memberikan keindahan dan keceriaan di sekelilingmu.
+        
+        Di usia 19 ini, aku berharap kamu dapat mengejar semua impianmu dengan semangat yang tak tergoyahkan. Ingatlah, hidup adalah perjalanan yang penuh dengan pelajaran, dan setiap pengalaman baik juga buruk akan membentukmu menjadi pribadi yang lebih kuat dan bijaksana.
+        
+        Setiap momen yang kamu lewati adalah kenangan berharga. Sekali lagi 🎉 Selamat ulang tahun yang ke-19 dikit lagi jadi tante nih ,eh udah ya! Di usia ini, semoga kamu semakin menemukan jati diri dan mengejar impianmu. Ingatlah, setiap langkah yang kamu ambil adalah bagian dari perjalanan hidup yang indah. Terus bersinar dan berikan yang terbaik!.
+        
+        Semoga cinta dan kebahagiaan selalu menyertaimu. Ingatlah bahwa orang terdekatmu termasuk saya hhe, akan selalu ada untuk mendukungmu dalam setiap langkah yang kamu ambil. Semoga yang disemogakan tersemogakan. Jangan terlalu mikirin yang gak seharusnya di pikirin hidup emang kadang kiding. Semoga panjang umur dan sehat selalu ya neng.
+        
+        Selamat ulang tahun! Semoga semua impianmu terwujud, dan tahun ini dan tahun kedepanya dipenuhi dengan pengalaman serta peluang yang tak terlupakan. 💖
+        
+        " أتمنى أن يملأ عيد ميلادك بلحظات سعيدة " (Gak tau ini artinya bener engga dapet dari google:v ) 
+        </p>
+  </section>
+  
+  <!-- Pesan Keempat dengan Pertanyaan -->
+  <section>
+  	<!-- Background --><div class="wp"><img id="imgempat" src="4.jpg"/></div>
+      <!-- Stiker --><img class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+      
+      <h2 class="title">Akhirnya...</h2>
+      <p class="bold slide-right">Udah Bacanya?</p>
+      
+      <div id="Tombol">
+       <a id="By" onClick="fungsipertama()">Udah dong</a>
+       <a id="Bn" onClick="fungsikedua()">Belom</a>
+     </div>
+  </section>
+  
+  <!-- Pesan Akhir, edit di paling bawah di dalam Script -->
+  <section id="iniakhir">
+  	<!-- Background --><div class="wp" id="wpakhir"><img src="5.jpg"/></div>
+      <!-- Stiker --><img id="stikerakhir" class="stiker fade-in" src="https://feeldreams.github.io/g5.gif"/>
+      
+      <img id="stikerakhir2" style="display:none" src="birthday-cake.gif"/>
+      <h1 id="judulakhir"></h1>
+      <p id="kalimatakhir"></p>
+      <p id="palingakhir"></p>
+      <div id="TombolWA">
+        <a onClick="menuju()" href="https://wa.me/+6285870371095">Kesan Pesan </a>
+      </div>
+  </section>
+  
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
+
+<script>
+// Teks ketika klik tombol Mau
+function fungsipertama(){
+       fungsi=0;tes();
+       teksjudulakhir = "Alhamdulillah";
+       tekskalimatakhir = "Thankyou yah... Babaiii";
+}
+
+// Teks ketika klik tombol Gamau
+function fungsikedua(){
+       fungsi=0;tes();
+       teksjudulakhir = "Bohong Pasti udahan";
+       tekskalimatakhir = "Thankyou Yah... byebye";
+}
+
+// Teks Akhir
+teksjudulakhir2 = "Be Yourself😁";
+tekspalingakhir = "Assalamualaikum🙌";
+  
+// Teks yang akan dikirim ke WhatsApp
+pesanwhatsapp = "Makasih ya dhoo(agak dipaksa)";
+
+const body = document.querySelector("body"); initom.style="opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<script src="script.js"></script>
+</body>
+</html>
